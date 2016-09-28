@@ -1,3 +1,5 @@
+var Output = $("")
+
 console.log(":D")
 function getPokemon() {
   $.ajax({
