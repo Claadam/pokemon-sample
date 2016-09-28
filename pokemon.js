@@ -1,4 +1,4 @@
-var Output = $("")
+var Output = $("output-text");
 
 console.log(":D")
 function getPokemon() {
@@ -8,6 +8,7 @@ function getPokemon() {
     success: function(res) {
       console.log("got it")
       console.log(res)
+      Output.html(res)
     }
   })
 }
