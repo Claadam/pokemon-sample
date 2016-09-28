@@ -8,7 +8,7 @@ function getPokemon() {
     success: function(res) {
       console.log("got it")
       console.log(res)
-      Output.html("jkjhjkh")
+      Output.html(res)
     }
   })
 }
