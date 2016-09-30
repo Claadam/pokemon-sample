@@ -1,5 +1,5 @@
 var Name = $("#name-text");
-var id = $("#id-text");
+
 
 console.log(":D")
 function getPokemon() {
@@ -10,9 +10,7 @@ function getPokemon() {
     success: function(res) {
       console.log("got it")
       console.log(res)
-      Name.html(res["name"])
-      id.html("id is" + res["id"])
-      
+      Name.html(res["name"] + "'s id is " res["id"])
     }
   })
 }
