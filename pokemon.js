@@ -9,7 +9,9 @@ function getPokemon() {
     success: function(res) {
       console.log("got it")
       console.log(res)
-      Output.html(res.toString())
+      Output.html(res["name"])
+      Output.html(res["id"])
+      
       console.log(Output)
     }
   })
