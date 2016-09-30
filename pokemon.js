@@ -9,7 +9,7 @@ function getPokemon() {
     success: function(res) {
       console.log("got it")
       console.log(res)
-      Output.html("Noodles")
+      Output.html(res.toString())
       console.log(Output)
     }
   })
